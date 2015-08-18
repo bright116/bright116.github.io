@@ -1,0 +1,271 @@
+// Widget style
+.wijchart-axis-label{
+	font: 11px @regular-font !important;
+	font-weight: normal !important;
+}
+
+.wijchart-header-text{
+	text-transform: uppercase;
+	font: 14px @regular-font !important;
+	font-weight: bold !important;
+}
+
+.wijbarchart-label,
+.wijchart-axis{
+	display: none !important;
+}
+
+//General
+.widget{
+	background-color: #f3f7f7;
+	padding-bottom: 20px;
+}
+
+.widget__heading{
+		padding-top: 15px;
+		padding-bottom: 20px;
+		margin-top: 0;
+		margin-bottom: 10px;
+		font: 14px @regular-font;
+		font-weight: bold;
+		color: #737c85;
+		text-align: center;
+		text-transform: uppercase;
+}
+//Small timetable
+.small-timetable{
+	.small-timetable__number{
+		display: inline-block;
+		padding: 25px 0 15px 20px;
+		font-family: @brand-font;
+		color: @primary-color;
+	}
+
+	.small-timetable__proggress{
+		display: inline-block;
+		float: right;
+		padding: 25px 20px 15px 0;
+		font-family: @brand-font;
+		color: @primary-color;
+
+		.fa{
+			font-size: 12px;
+			margin-right: 6px;
+		}
+	}
+}
+
+//wigtet tables
+.wigtet-tables{
+	padding-bottom: 30px;
+
+	.widget__heading{
+		padding-bottom: 0;
+	}
+}
+
+.bartracker{
+	.border-radius(5px);
+}
+
+.wijchart-axis-label{
+	font-weight: bold !important;
+}
+
+//
+.dial{
+	max-width: 150px;
+	margin-left: -104px !important;
+	font: 24px @brand-font !important;
+}
+
+.widget-circle{
+	position: relative;
+	padding-bottom: 60px;
+
+	.widget__heading{
+		padding-bottom: 35px;
+	}
+
+	text-align: center;
+
+	&:before{
+		content: "%";
+		position: absolute;
+		top: 125px;
+		left: 50%;
+		margin-left: 8px;
+		font: 24px @brand-font;
+		color: @danger-color;
+	}
+}
+
+//Widget pie
+.widget-pie{
+	padding-bottom: 30px;
+	height: 270px;
+	position: relative;
+
+	&:before{
+		content: "";
+		position: absolute;
+		top: 106px;
+		left: 50%;
+		width: 135px;
+		height: 135px;
+		margin-left: -68px;
+		background-color: @null-color;
+		.border-radius(50%);
+	}
+}
+
+.wijmo-wijpiechart svg{
+	top: -145px !important;
+}
+
+.wijchart-legend-text{
+	font-family: @regular-font !important;
+}
+
+.wijmo-wijpiechart path[stroke="#cccccc"]{
+	opacity: 0 !important;
+}
+
+//Large timetable
+.widget-timetable-large{
+	padding-bottom: 50px;
+	margin-top: 30px;
+	position: relative;
+
+	.wijchart-axis-label{
+		font-weight: normal !important;
+		transform: translate(0, 12px);
+	}
+
+	.widget__heading{
+		text-align: left;
+		padding-left: 20px;
+		padding-bottom: 0;
+		margin-bottom: 4px;
+	}
+
+	.wijchart-axis-gridline{
+		transform: translate(0, 12px);
+	}
+}
+
+//Dashboard
+.dashboard-timetable{
+	margin-top: 0;
+
+}
+
+.dashboard-timetable{
+		.wijchart-axis-label{
+			display: none;		
+		}
+
+		.wijchart-axis-label:nth-child(2n){
+			display: block;		
+		}
+	}
+
+.dashboard-widget{
+	padding-left: 70px;
+	padding-right: 70px;
+}
+
+.widget--message{
+	padding-bottom: 7px;
+
+	.widget__head{
+		.widget__heading{
+			text-align: left;
+			display: inline-block;
+			padding-left: 25px;
+			padding-bottom: 5px;
+		}
+	}
+
+	.widget__content{
+		max-height: 243px;
+		padding-left: 0;
+		list-style: none;
+	}
+
+	.widget__content-item{
+		position: relative;
+		padding-left: 20px;
+		background-color: #fbfdfd;
+		overflow: hidden;
+	}
+
+	.widget__image{
+		float: left;
+		width: 50px;
+		height: 50px;
+		margin: 11px 10px 11px 0;
+		border: 2px solid @warning-color;
+		.border-radius(50%);
+
+		img{
+			max-width: 100%;
+			.border-radius(50%);
+		}
+	}
+
+	.widget__author{
+		display: inline-block;
+		padding-top: 15px;
+		font-style: normal;
+		color: @primary-color;
+
+		&:hover{
+			color: @secondary-color;
+		}
+	}
+
+	.widget__text{
+		font-size: 13px;
+		font-style: normal;
+		color: #737c85;
+		margin-bottom: 0;
+	}
+
+	.widget__time{
+		position: absolute;
+		top: 16px;
+		right: 45px;
+		font-style: normal;
+	}
+
+	.widget__content-item:nth-child(2n){
+		background-color: #f3f7f7;
+
+		.widget__image{
+			border: 2px solid @secondary-color;
+		}
+	}
+
+
+	.mCSB_scrollTools .mCSB_dragger{
+		width: 8px;
+		min-width: 8px;
+		height: 100px !important;
+		background-color: #d2d1d0;
+		.border-radius(4px);
+
+		&:before,
+		&:after{
+			display: none;
+		}
+	}
+
+	.mCSB_draggerRail{
+		display: none;
+	}
+
+	.mCSB_container{
+		margin-right: 0;
+	}
+ }

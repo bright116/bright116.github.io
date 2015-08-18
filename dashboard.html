@@ -1,0 +1,580 @@
+<!doctype html>
+<html lang="en-us">
+<head>
+	<!-- Basic Page Needs -->
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+        <meta charset="utf-8">
+        <title>Allec - Dashboard</title>
+        <meta name="description" content="A Template by Designzway team">
+        <meta name="keywords" content="HTML, CSS, JavaScript">
+        <meta name="author" content="Designzway team">
+
+    <!-- Mobile Specific Metas-->
+    	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta content="telephone=no" name="format-detection">
+    
+    <!-- Fonts -->
+    	<!-- Open Sans -->
+    	<link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400italic,600,700italic,400,700,800italic' rel='stylesheet' type='text/css'>
+    	<!-- VarelaRound -->
+    	<link href='http://fonts.googleapis.com/css?family=Varela+Round' rel='stylesheet' type='text/css'>
+    	<!-- Icon Font - Font Awesome -->
+    	<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+
+    <!-- Stylesheets -->
+		<!-- External -->
+		<!-- Select box -->
+    	<link href="external/bootstrap-select/bootstrap-select.css" rel="stylesheet">
+    	 <!-- Datepicker -->
+    	 <link href="external/bootstrap-datepicker/datepicker.css" rel="stylesheet">
+		<!--Wijmo Widgets CSS-->
+		<link href="http://cdn.wijmo.com/jquery.wijmo-pro.all.3.20141.34.min.css" rel="stylesheet"/>
+		<!-- mCustomScrollbar -->
+        <link href="external/mCustomScrollbar/jquery.mCustomScrollbar.css" rel="stylesheet" />
+    
+        <!-- Custom -->
+        <link href="css/style.css?v=1" rel="stylesheet" />
+		
+		<!-- Basic JavaScript-->
+		<!-- Modernizr -->
+		<script src="external/modernizr/modernizr.custom.js"></script>
+    
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries --> 
+    <!--[if lt IE 9]> 
+    	<script src="http://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7/html5shiv.js"></script> 
+		<script src="http://cdnjs.cloudflare.com/ajax/libs/respond.js/1.3.0/respond.js"></script>		
+    <![endif]-->
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header-fluid">
+			<!-- Logo -->
+			<a class="logo logo--block" href="index.html">
+				<h1 class="logo__text">Allec</h1>    
+			</a>
+			<!-- end logo -->
+
+			<!-- Search field -->
+			<form class="search search--empty" id="search-form" name="search-form" method="get" action="#">
+		        <input class="search__field" name="search-request" type="search" placeholder="Search request here..." value="">
+		        <button class="search__btn" type="submit">
+				    <i class="fa fa-search"></i>
+				</button>
+		    </form>
+			<!-- end search field -->
+
+			<div class="header__controls">
+				<!-- User login area -->
+				<a class="user" href="#">
+					<div class="user__photo">
+						<img src="http://placehold.it/97x97" alt="">
+					</div>
+
+					<span class="user__name">Marissa Tommen <i class="fa fa-angle-down"></i></span>
+				</a>
+				<!-- end user login area -->
+				
+				<!-- Notification (tast, mails) -->
+				<a class="notification" href="#">
+					<i class="fa fa-envelope"></i>
+				</a>
+
+				<a class="notification" href="#">
+					<i class="fa fa-tasks"></i>
+				</a>
+				<!-- end Notification -->
+				
+				<!-- Sign out button -->
+				<a class="btn btn-warning btn--decorated btn--logout" href="#"><i class="fa fa-sign-out"></i></a>
+			</div>
+
+		</header>
+		<!-- Colored devider -->
+		<div class="devider-color"></div>
+	</div>
+
+	<section>
+		<h3 class="not-visible">Main conrainer</h3>
+
+		<aside class="nav-sidebar">
+			<div class="nav-sidebar-container">
+				<h3 class="nav-sidebar__title">Navigation</h3>
+				<nav>
+					<a class="navigation-toggle" href="#"><i class="fa fa-bars"></i></a>
+					<ul class="navigation">
+						<li class="navigation__item"><a class="navigation__link" href="#"><i class="fa fa-dashboard"></i>Dashboard</a></li>
+						<li class="navigation__item"><a class="navigation__link" href="#"><i class="fa fa-signal"></i>Statistics</a></li>
+						<li class="navigation__item"><a class="navigation__link" href="#"><i class="fa fa-folder"></i>Projects <span class="badge pull-right">26</span></a></li>
+						<li class="navigation__item"><a class="navigation__link" href="#"><i class="fa fa-user"></i>Users</a></li>
+						<li class="navigation__item"><a class="navigation__link" href="#"><i class="fa fa-file"></i>Reports</a></li>
+						<li class="navigation__item"><a class="navigation__link" href="#"><i class="fa fa-clipboard"></i>Resources</a></li>
+						<li class="navigation__item"><a class="navigation__link" href="#"><i class="fa fa-calendar"></i>Schedule <span class="badge pull-right">1</span></a></li>
+					</ul>
+				</nav>
+			</div>
+
+			<div class="devider devider--dark"></div>
+			
+			<div class="nav-sidebar-container">
+				<h3 class="nav-sidebar__title">Labels</h3>
+				<ul class="labels">
+					<li class="labels__item"><i class="fa fa-circle-o icon--warning"></i>Social</li>
+					<li class="labels__item"><i class="fa fa-circle-o icon--danger"></i>College</li>
+					<li class="labels__item"><i class="fa fa-circle-o icon--secondary"></i>Projects</li>
+				</ul>
+			</div>
+
+			<div class="devider devider--dark"></div>
+			
+			<div class="nav-sidebar-container">
+				<h3 class="nav-sidebar__title">Notifications <span class="badge pull-right">4</span></h3>
+
+				<div class="news">
+					<a class="news__heading" href="#">You had a new sale ($10) </a>
+					<p class="news__date">09:00 | May 05, 2014</p>
+				</div>
+
+				<div class="news">
+					<a class="news__heading" href="#">New task added to the Solar Project</a>
+					<p class="news__date">08:00 | May 05, 2014</p>
+				</div>
+
+				<div class="news">
+					<a class="news__heading" href="#">You recieved new message</a>
+					<p class="news__date">07:00 | May 05, 2014</p>
+				</div>
+
+				<div class="news">
+					<a class="news__heading" href="#">You recieved new message</a>
+					<p class="news__date">06:59 | May 05, 2014</p>
+				</div>
+
+			</div>
+		</aside>
+		
+
+		<div class="content-dashboard">
+			<h3 class="heading-helper heading-helper--sm heading-helper--markered heading-helper--markered-first">recent stats</h3>
+
+			<div class="full-row">
+				<div class="column-sm">
+						<div class="small-timetable widget dashboard-widget">
+							<h3 class="widget__heading">Wins &amp; Losses</h3>
+							<div id="wijlinechart" style="width: 100%; height: 125px"></div>
+							<span class="small-timetable__number">5 527</span>
+							<span class="small-timetable__proggress"><i class="fa fa-long-arrow-up"></i>20%</span>
+						</div>
+				</div>
+
+					<div class="column-sm">
+						<div class="widget wigtet-tables dashboard-widget">
+							<h3 class="widget__heading">Completed tests</h3>
+							<div id="wijbarchart" style="width: 100%; height: 195px"></div>
+						</div>
+					</div>
+
+					<div class="column-sm">
+						<div class="widget widget-circle">
+							<h3 class="widget__heading">efficiency level</h3>
+							<input type="text" class="dial" data-min="0" data-max="100" data-linecap="round" data-readOnly="true" data-thickness=".2" data-width="125" data-height="125" data-fgColor="#fe8f8c" value="48" data-angleOffset="180">
+						</div>
+					</div>
+			</div>
+
+			<h3 class="heading-helper heading-helper--sm heading-helper--markered">Overall analytics</h3>
+			
+			<div class="full-row">
+					<div class="column-lg">
+						<div class="widget widget-timetable-large dashboard-timetable">
+							<h3 class="widget__heading">Earnings</h3>
+							<div id="wijlinechart-large" style="width: 100%; height: 180px"></div>
+							<form class="select select--sm select--widget" name="select" method="get" action="#">
+								<select class="select-box" id="select-box2" name="select-box" tabindex="0">
+									<option value="default" selected="selected">last day</option>
+									<option value="popular">last 2 weeks</option>
+									<option value="arrival">last mounth</option>
+									<option value="rating">last year</option>
+								</select>
+							</form>
+						</div>
+					</div>
+
+					<div class="column-sm column-specific">
+						<div class="widget widget-pie">
+							<h3 class="widget__heading">Currency</h3>
+							<div id="wijpiechart"></div>
+						</div>
+					</div>
+
+			</div>
+
+			<h3 class="heading-helper heading-helper--sm heading-helper--markered">organizer</h3>
+			<div class="full-row">
+				<div class="column-lg">
+					<div class="widget widget--message">
+						<div class="widget__head">
+							<h3 class="widget__heading">Messages</h3>
+							<!-- Search field -->
+							<form class="search search--light pull-right" id="search-line" name="search-line" method="get" action="#">
+				                <input class="search__field" name="search-request" type="search" placeholder="search" value="">
+				                <button class="search__btn" type="submit">
+						            <i class="fa fa-search"></i>
+						        </button>
+				            </form>
+							<!-- end search field -->
+						</div>
+						
+						<div class="content">
+							<ul class="widget__content">
+								<li class="widget__content-item">
+									<div class="widget__image"><img src="http://placehold.it/97x97" alt=""></div>
+									<a class="widget__author" href="#">Elaine Hall</a>
+									<p class="widget__text">Nunc eu sodales turpis, varius viverra mauris...</p>
+									<span class="widget__time">07:00</span>
+								</li>
+								<li class="widget__content-item">
+									<div class="widget__image"><img src="http://placehold.it/97x97" alt=""></div>
+									<a class="widget__author" href="#">Charlene Jenkins</a>
+									<p class="widget__text">Nunc eu sodales turpis, varius viverra mauris...</p>
+									<span class="widget__time">06:59</span>
+								</li>
+								<li class="widget__content-item">
+									<div class="widget__image"><img src="http://placehold.it/97x97" alt=""></div>
+									<a class="widget__author" href="#">Jim Wade</a>
+									<p class="widget__text">Nunc eu sodales turpis, varius viverra mauris...</p>
+									<span class="widget__time">06:14</span>
+								</li>
+
+								<li class="widget__content-item">
+									<div class="widget__image"><img src="http://placehold.it/97x97" alt=""></div>
+									<a class="widget__author" href="#">Elaine Hall</a>
+									<p class="widget__text">Nunc eu sodales turpis, varius viverra mauris...</p>
+									<span class="widget__time">06:12</span>
+								</li>
+								<li class="widget__content-item">
+									<div class="widget__image"><img src="http://placehold.it/97x97" alt=""></div>
+									<a class="widget__author" href="#">Charlene Jenkins</a>
+									<p class="widget__text">Nunc eu sodales turpis, varius viverra mauris...</p>
+									<span class="widget__time">06:10</span>
+								</li>
+								<li class="widget__content-item">
+									<div class="widget__image"><img src="http://placehold.it/97x97" alt=""></div>
+									<a class="widget__author" href="#">Jim Wade</a>
+									<p class="widget__text">Nunc eu sodales turpis, varius viverra mauris...</p>
+									<span class="widget__time">06:02</span>
+								</li>
+							</ul>
+						</div>	
+					</div>
+				</div>
+
+				<div class="column-sm column-specific">
+					<div class="widget datepicker"></div>
+				</div>		
+			</div>
+		</div>
+
+	</section>
+
+	<div class="animationload">
+        	<div class="preloader"></div>
+    </div>
+
+	<!-- JavaScript-->
+		<!-- External-->
+		<!-- jQuery 1.10.1--> 
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="external/jquery/jquery-1.10.1.min.js"><\/script>')</script>
+        <!--jQuery References--> 
+		<script src="http://code.jquery.com/ui/1.10.1/jquery-ui.min.js" type="text/javascript"></script>
+		<!-- Bootstrap 3--> 
+        <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+
+        <!-- Select box -->
+		<script src="external/bootstrap-select/bootstrap-select.js"></script>
+		 <!-- Circle progress bar -->
+		<script src="external/knob/jquery.knob.js"></script>
+		 <!-- Datepicker -->
+		<script src="external/bootstrap-datepicker/bootstrap-datepicker.js"></script>
+		<!-- mCustomScrollbar -->
+        <script src="external/mCustomScrollbar/jquery.mCustomScrollbar.concat.min.js"></script>
+
+		<!-- Charts widget scripts -->
+		<!--Wijmo Widgets JavaScript-->
+		<script src="http://cdn.wijmo.com/jquery.wijmo-open.all.3.20141.34.min.js" type="text/javascript"></script>
+		<script src="http://cdn.wijmo.com/jquery.wijmo-pro.all.3.20141.34.min.js" type="text/javascript"></script>
+		<script src="http://cdn.wijmo.com/interop/wijmo.data.ajax.3.20141.34.js" type="text/javascript"></script>
+        
+		 <!-- Custom -->
+         <!-- <script src="js/custom.js"></script> -->
+
+		<script>
+			$(document).ready(function() {
+				$(window).load(function() {
+					$(".loader").delay(300).fadeOut();
+					$(".animationload").delay(600).fadeOut("slow");
+				});
+
+				$('.navigation-toggle').on('click touchstart', function(e){
+					e.preventDefault();
+					$(this).toggleClass('navigation-open');
+					$('.nav-sidebar').toggleClass('navigation-open');
+				})
+
+
+				//Select box
+		    	$('.select-box').selectpicker();
+
+		    	$('.datepicker').datepicker({
+				    todayHighlight: true
+				});
+
+				//scroll testimonial
+                 $(".widget__content").mCustomScrollbar({
+                 	axis:"y",
+					advanced:{
+						autoExpandHorizontalScroll:true
+					},
+	                //autoDraggerLength : false
+	              });
+                 
+				//Chart vars
+                var $wijlinechart = $("#wijlinechart");
+                var $wijbarchart = $("#wijbarchart");
+	            var $wijpiechart = $("#wijpiechart");
+				var $wijlinechartLarge = $("#wijlinechart-large");
+
+				//Chart widget init
+               $wijlinechart.wijlinechart({
+	            showChartLabels: false,
+	            hint: {
+			                	enable: false
+			    },
+	            axis: {
+	                y: {labels: {style: {fill: "#737c85"}},
+			                	gridMajor: {
+							        visible: true, 
+							        style: {
+							            stroke: "#dadede", 
+							            "stroke-width": "1", 
+							        }
+							    },
+							    max:100,
+							    min:0,
+							    annoMethod: "values",
+	            		},
+	                x: {labels: {style: {fill: "#737c85"}}}
+	            },
+	            legend: {
+	            	visible: false
+	            },               
+	            seriesList: [
+	                {
+	                    data: {
+	                        x: [2,4,6,8,10,12],
+	                        y: [60, 65, 90, 55, 39, 44]
+	                    },
+	                    markers: {visible: true, type: "circle",
+	                			style: {
+							            stroke: "#f3f7f7", 
+							            "stroke-width": "1", 
+							        }
+							    }
+	                },
+	                {
+	                     data: {
+	                         x: [2,4,6,8,10,12],
+	                         y: [52, 44, 68, 80, 99, 70]
+	                     },
+	                     markers: {visible: true, type: "circle",
+	                 				style: {
+							            stroke: "#f3f7f7", 
+							            "stroke-width": "1", 
+							        }
+							    }
+	                }
+	            ],
+	            seriesStyles: [
+	                {stroke: "#fe8f8c", "stroke-width": 1, opacity: 1}, 
+	                {stroke: "#85d6de", "stroke-width": 1, opacity: 1}
+	            ],
+	        });
+	                
+
+
+	            //BarChart init
+
+			        $wijbarchart.wijbarchart({
+			            	horizontal: false, 
+			                autoResize: "true",
+			                shadow: false,
+			                stacked: true,
+			                hint: {
+			                	enable: false
+			                },
+			                axis: {
+				                y: {labels: 
+				                		{style: {fill: "#737c85"}
+				                	},
+				                	gridMajor: {
+								        visible: false, 
+								    },
+								    max:100,
+								    min:0
+	            				},
+	            				x: {labels: {style: {fill: "#34495e"},
+			            					gridMajor: {
+										        visible: false, 
+										    }
+									}
+								}
+			                },
+			                legend: {
+				            	visible: false
+				            }, 
+			                seriesList: [{
+			                    label: "tests",
+			                    legendEntry: true,
+			                    data: { x: ['S', 'M', 'T','W', 'T', 'F', 'S' ], y: [42, 30, 65, 60, 50, 66, 80] }
+			                },
+			                {
+			                    label: "Max",
+			                    data: { x: ['S', 'M', 'T','W', 'T', 'F', 'S' ], y: [100, 100, 100, 100, 100, 100, 100] }
+			                }],
+			                seriesStyles: [{fill: "#85d6de", stroke: "#85d6de", opacity: 1, rx: 10, ry: 10}, 
+			                			   {fill: "#e3edee", stroke: "#e3edee", opacity: 1}
+                        				  ]
+			        });
+					
+
+				//Pie chart
+
+
+				$wijpiechart.wijpiechart({
+			        radius: 72,
+			        //height: 170, // chart area height 
+			        animation: { enabled: false },
+			        legend: {
+			        	compass: "north", // legend position relative to the chart 
+                        orientation: "horizontal", // legend elements orientation 
+                        textMargin: {left: 0, right: 0, top: 140, bottom: 0},
+            			textStyle: {fill: "#737c85", "font-size": 11}, 
+			        },
+			        hint: {
+			            enable: false
+			        },
+			        labels: { 
+                        // setup label style 
+                        style: { 
+                            "font-size": 16,
+                            "font-family": "Varela Round",
+                            fill:"#85d6de"
+                        }, 
+                        // setup label content 
+                        formatter: function () { 
+                            return Globalize.format(this.value / this.total, "p0"); 
+                        },
+                        connectorStyle: {
+					        "stroke-width": 0
+					    }, 
+                       
+                        position: "outside", 
+                        offset: 10 
+                    }, 
+			        seriesList: [{
+			            label: "$, Dollar",
+			            data: 56,
+			            offset: 0
+			        }, {
+			            label: "€, Euro",
+			            data: 25,
+			            offset: 0
+			        }, {
+			            label: "£, Pound",
+			            data: 19,
+			            offset: 0
+			        }],
+			        seriesStyles: [{
+			            fill: "#85d6de", 
+			            stroke: "#fff", 
+			            "stroke-width": 1
+			        }, {
+			            fill: "#7bc7d1", 
+			            stroke: "#fff", 
+			            "stroke-width": 1
+			        }, {
+			            fill: "#68aab8", 
+			            stroke: "#fff", 
+			            "stroke-width": 1
+			        }]
+			    });
+
+
+				//Circle diagram
+				$(".dial").knob();
+
+				//Large chart
+				
+
+				$wijlinechartLarge.wijlinechart({
+		            showChartLabels: false,
+		            type: "area",
+		            legend: {
+		            	visible: false
+		            }, 
+		            hint: {
+			            enable: false
+			        },
+		            axis: {
+		                y: {labels: {style: {fill: "#737c85", x:30}},
+			                	gridMajor: {
+							        visible: true, 
+							        style: {
+							            stroke: "#dadede", 
+							            "stroke-width": "1", 
+							        }
+							    },
+							    max:52000,
+							    min:10000
+							    //annoMethod: "values",
+	            		},
+	                	x: {labels: {style: {fill: "#737c85", y:160}}}
+		            },               
+		            seriesList: [
+		                {
+		                	
+		                    fitType: "spline",
+		                    data: {
+		                        x: ["05-01", "05-02", "05-03", "05-04", "05-05", "05-06", "05-07", "05-08", "05-09", "05-10", "05-11", "05-12", "05-13", "05-14", "05-15", "05-16", "05-17", "05-18", "05-19", "05-20", "05-21", "05-22", "05-23"],
+		                        y: [11000, 35000, 12000, 28000, 12000, 40000, 12500, 46000, 23000, 31000, 15000, 19000, 15000, 18000, 31000, 17000, 24000, 19500, 30500, 16000, 14000, 12000, 10000]
+		                    },
+		                    markers: {visible: false}
+		                },
+		                {
+		                     fitType: "spline",
+		                     data: {
+		                         x: ["05-01", "05-02", "05-03", "05-04", "05-05", "05-06", "05-07", "05-08", "05-09", "05-10", "05-11", "05-12", "05-13", "05-14", "05-15", "05-16", "05-17", "05-18", "05-19", "05-20", "05-21", "05-22", "05-23"],
+		                         y: [10500, 18000, 12000, 30000, 40500, 29000, 18500, 25000, 15000, 51000, 16000, 23000, 11000, 33000, 11500, 17000, 22000, 17000, 43000, 13000, 12000, 11000, 10000]
+		                     },
+		                     markers: {visible: false}
+		                }
+		            ],
+		            seriesStyles: [
+		                {fill: "#85d6de", stroke: "#85d6de", "stroke-width": 5, opacity: 1}, 
+		                {fill: "#fed37f", stroke: "#fed37f", "stroke-width": 5, opacity: 1}
+		            ],
+		        });
+						
+					//Charts redraw on resize
+					$(window).resize(function(){
+						$wijlinechart.wijlinechart("redraw");
+						$wijbarchart.wijbarchart("redraw");
+						$wijpiechart.wijpiechart("redraw");
+						$wijlinechartLarge.wijlinechart("redraw");
+					});
+			});			
+		</script>
+
+</body>
+</html>
